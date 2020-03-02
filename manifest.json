@@ -1,0 +1,43 @@
+{
+  "name": "ConVista SAP Cloud Platform Integration Extender",
+  "version": "0.2.0",
+  "description": "Extends the SAP Cloud Platform Integration with some useful features. This includes a Trace Button directly in the Integration-Flow-Designer and a list of messages with direct navigation to the traces.",
+  "permissions": [
+    "declarativeContent",
+    "storage",
+    "https://*.hana.ondemand.com/itspaces",
+    "webRequest"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.hana.ondemand.com/itspaces/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
+}
