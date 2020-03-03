@@ -1,7 +1,9 @@
 {
-  "name": "ConVista SAP Cloud Platform Integration Extender",
+  "name": "ConVista SAP CPI Helper",
   "version": "0.2.0",
-  "description": "Extends the SAP Cloud Platform Integration with some useful features. This includes a Trace Button directly in the Integration-Flow-Designer and a list of messages with direct navigation to the traces.",
+  "description": "Extends the SAP Cloud Platform Integration with some useful features to improve usability.",
+  "author": "Dominic Beckbauer @ Convista Consulting AG",
+  "homepage_url": "https://github.com/dbeck121/ConVista-CPI-Helper-Chrome-Extension",
   "permissions": [
     "declarativeContent",
     "storage",
@@ -27,17 +29,17 @@
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/get_started16.png",
-      "32": "images/get_started32.png",
-      "48": "images/get_started48.png",
-      "128": "images/get_started128.png"
+      "16": "images/cpi_helper16.png",
+      "32": "images/cpi_helper32.png",
+      "48": "images/cpi_helper48.png",
+      "128": "images/cpi_helper128.png"
     }
   },
   "icons": {
-    "16": "images/get_started16.png",
-    "32": "images/get_started32.png",
-    "48": "images/get_started48.png",
-    "128": "images/get_started128.png"
+    "16": "images/cpi_helper16.png",
+    "32": "images/cpi_helper32.png",
+    "48": "images/cpi_helper48.png",
+    "128": "images/cpi_helper128.png"
   },
   "manifest_version": 2
 }
